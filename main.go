@@ -12,8 +12,8 @@ import (
 func main() {
 	// making an object containing the user creds
 	cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredentialOptions{
-		ClientID: "94743c2d-6fc4-411e-a0f1-c88114c4a64e",
-		TenantID: "58656256-21c8-457c-b940-95a0df4e292b",
+		ClientID: "Your_client",
+		TenantID: "your-tenent",
 
 		UserPrompt: func(ctx context.Context, message azidentity.DeviceCodeMessage) error {
 			fmt.Println(message.Message)
